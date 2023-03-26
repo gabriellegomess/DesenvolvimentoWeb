@@ -1,0 +1,311 @@
+<!--
+
+<h1> <h2,....h6> TItulos em negrito e com fontes maiores
+
+<p> paragrafos
+
+<ul> Lista Desordenada (bolinhas (circle, disc) &  quadrado (square) )
+    <li type="circle"> Texto </li>
+    <li type="disc"> Texto </li>
+    <li type="square"> Texto </li>
+
+</ul>
+
+<ol> Lista Ordenada (alfabeto, números romanos, ordem numerica)
+    <li type="1"> Texto </li> (1 =  lista numérica)
+
+    <li type="i"> Texto </li> ( i =  Numeros romanos MINUSCULO)
+    <li type="I"> Texto </li> ( I =  Numeros romanos MAIUSCULO)
+
+    <li type="a"> Texto </li> ( a = alfabeto MINUCULO)
+    <li type="A"> Texto </li> ( A = alfabeto MAISCULO)
+
+    <li type="" start="" (type= defini o tipo de lista que quer) (start = inicia no numero/letra/etc que voce quiser)
+    ( ex: type="a" start="3"  a lista em ordem alfabetica vai iniciar em C)
+
+</ol>
+
+<dl> Definição da lista
+    <dt> Definição de Termo
+    <dd> Definição da Descrição
+</dl>
+
+<pre> Identa o texto Considera seu texto pre-formatado </pre>
+
+<code> Muda a fonte </code>
+
+------------- OBSSS ---------------------
+
+OBS: DA PARA COLOCAR LISTAS DENTR DE LISTRAS
+EXEMPLO:
+
+<ul>
+
+    <li type="circle"> Naruto
+        <ol>
+            <li type="1"> Naturo Uzumaki</li>
+            <li type="A"> Sakura Haruno</li>
+        </ol>
+    </li>
+
+    <li type="circle"> One Piece
+        <ul> 
+            <li type="square"> Monkey D. Luffy</li>
+            <li type="square"> Roronoa Zoro</li>
+        </ul>
+    </li>
+
+    <li type="square"> Fullmetal Alchemist </li>
+        <ul>
+            <li type="circle"> Edward Elric</li>
+            <li type="circle"> Alphonse Elric</li>
+
+        </ul>
+    
+    <li type="square"> Attack On Ttitan</li>
+        <ol>
+            <li type="1"> Eren Yeager</li>
+            <li type="a"> Mikasa Ackerman</li>
+        </ol>
+
+</ul>
+
+=============================================================================================================
+--------------------------------- Imagens
+
+<img src="pasta de destino da imagem" alt="descrição, nome, palavras chaves, da imagem">
+
+<img src="../destino" alt="nome"> (../ Volta algumas pastas caso a pasta da img esteja embx de outras pgs)
+
+<img src="imagens/exercicio.jpg" alt="imagem da aula"> 
+
+<img src="../imagens/exercicio.jpg" alt="imagem da aula"> 
+
+=============================================================================================================
+-------------------------------- Links
+
+Varios tipos de links
+
+<a href="Endereço do Destino"> Texto/Imagem do link (aperta aqui sublinhado)</a>
+
+º LINKS INTERNOS: pula para dierss partes da sua pagina (ex: shein -> roupas )
+
+<h2 id="destino"> Seção seguinte</h2>
+(texto>)
+<a name="destino"></a>  ou 
+<h2 id="destino"> Seção seguinte</h2> 
+
+
+<a href="Pasta/aquivo.html"> Texto do link </a>
+
+<a href="Pasta/arquivo.html#secao"> Texto do link </a> (Alguma coisa especifica ex: embx da img
+ta escrito "clique aq para ver o preço da passagem" ai com esse #secao vc leva a pessoa ate a parte dos preços)
+
+<a href="../../Pasta/arquivo.html"> Texto do Link </a> Sai de uma pasta, sai da outra pasta
+
+<a href="./index/index.html"> Volta </a> Procura um arquivo na msm pasta q esta
+
+<a href="~/Dowloads/index"> </a> Acessa a pasta dowloads do pc
+
+º LINKS REMOTOS: links fora do site e fora do seu pc
+
+<a href="http://www.google.com.br">www.google.com.br</a> Se dirige a paginas e documentos fora do nosso site
+
+
+º LINKS CM ARQUIVOS (fazer download no momento q o usuario clica)
+
+ <a href="arquivo.zip"download> nomeDoArquivo</a>
+ 
+
+º LINKS TARGET
+
+<a href="https://www.google.com/" target="_blank"> Google </a>  _blank : abre o documento em uma nova guia do navegador
+<a href="https://www.google.com/" target="_self"> Google </a>   _self : padrão abre o documeno na mesma guia
+
+ _blank : abre o documento em uma nova guia do navegador
+ _self : padrão abre o documeno na mesma guia
+
+=============================================================================================================
+ -------------- TABELAS
+
+ <table> </table> -> organizar e apresentar dados
+
+ linhas e diferentes colunas: 
+
+    <tr> </tr> LINHAS
+
+    <th> </th> COLUNAS 
+
+    <td> </td> Texto 
+
+<td colspan="2"> Mesclando aqui </td> OCUPAR DUAS COLUNAS (funde colunas)
+
+<td rowpans="2"> Mesclando aq </td> OCUPAR DUAS LINHAS (funde linhas)
+
+EXEMPLO>
+
+<table>
+    <tr> 
+        <th> Nome</th>
+        <th> Idade</th>
+    </tr>
+
+    <tr>
+        <td> Marcos</td>
+        <td> 25</td>
+    </tr>
+    
+    <tr>
+        <td> Ana</td>
+        <td>25</td>
+    </tr>
+
+ </table>
+
+FAZER O ARQUIVO CSS FUNCIONAR NO HTML
+
+<link rel="stylesheet" type="text/css" href="nome-do-arquivo.css">
+
+
+=============================================================================================================
+--------------- Tags Semânticas
+
+<blockquote> textos citados de outra fonte
+
+<abrr> abreviaturas (importante para rankear a pagina)
+
+<code> codigos de computador
+
+<strong> um texo com impacto algo que vc quer destacar (bold)
+
+<em> texto com enfase, resulta em um texo italico
+
+<sup> texto sobreescrito
+            (importantes para usar potência, formulas quimicas, etc)
+<sub> texto subescrito
+
+<mark> marcar trechos relevante (tipo marca texto na página)
+
+<pre> texto pre formatado mantem espaços em brancos e quebras de linha do fonte ()
+
+<time> textos que indicam horários e datas
+
+auto renemae tag
+
+crtl shift p - wrap 
+
+==================================================
+------------Estrutura
+
+<header> cabeçalho da página ou seção
+
+<nav> links de navegação
+
+<section> seções de página (texto principal)
+
+<article> contéudo a página
+
+<aside> conteudo na barra lateral 
+
+<footer> rodapé da página ou seção
+
+====================================================
+----Video
+
+<video> width="tamanho" heigth="altura" controls ou autoplay (controle de volume etc)>
+    <source src="dogs.mp4" type="video/mp4">  (nome do video.formato dele)
+    <source src="dogs.webm" type="video/webm">
+
+    Seu navegador não suporta vídeos(caso n consiga excecutar nenhum dos tipos de videos)
+
+    (deixar oq mais comporta videos por ultimos)
+
+</video>
+
+(pegar video direto do ytb)
+
+clica em compartilhar e clica em incorporar e cola no codigo onde quer (bem + facil)
+
+====================================================
+-----------Boas práticas
+
+declarar o tipo do documento
+
+nomes de elementos e atributos em letras minusculas
+
+fechar tds os elemento
+
+citar os valores dos atributos <p id="valor"></p>
+
+imagens smp cm altura e largura definidos dps do src,alt, style="width: 200px; height: 200px"
+
+sem espaços ao lado dos sinais de = <>
+
+não pular titulo (importante para pesquisa e as abas)
+
+====================================================
+--------Validação
+
+
+====================================================
+--------Versionamente de Código
+
+
+====================================================
+--------------CSS
+
+ADC CSS <link rel="stylesheet" href="style.css"> 
+DA PRA TER VARIOS CSS cada um para uma parte diferente (formulario.css, index.css, style.css, etc oq quiser)
+
+OU <style> 
+    @import url("style.css");
+        p {color: red} da pra adc os estilos dentro do import tb
+    </style> 
+
+OU  <style> </style> (antes do titulo da pagina)
+
+
+seletor: elemento que vai ser formatado
+bloco de declaração: o estilo q vai ficar seu css
+
+p{color: ; font-size: 1.5em;}
+
+propriedade e valor 
+
+ESTILO INTERNO - facil de adicionar mas para site com varias paginas não é eficiente (pesa o navegador)
+
+<style> </style> (antes do titulo da pagina)
+
+ESTILO EXTERNO - arquivo css só tem os estilos
+<link rel="stylesheet" href="style.css">
+
+ESTILO INLINE
+<h1 style="color: red; font-size: 15px">Texto</h1>
+
+alteração pontual, coisas especificas, precisa mudar manualmente
+
+SELETORES: tag(h1, p, ul), class(varios elementos), id(unico elemento tem isso)
+
+
+
+color: red; visivel mais facil, porem lento 
+rgba(255, 0, 0, 0.3); rgba - transparencia / rgb cor normal 
+color:#FF0000;  mais rapido porem dificil de entender 
+
+
+
+====================================================
+
+
+
+auto renemae tag
+
+crtl shift p - wrap 
+
+algum tag*2 (nome da tag e quantas vezes vc quer que ela abra)
+ex: <li>*3
+        vai abrir   <li></li>
+                    <li></li>
+                    <li></li>
+
+ -->

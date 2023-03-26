@@ -1,0 +1,23 @@
+div {
+    height: 200px;
+    width: 50%;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+  }
+
+footer {
+    background-color: #9e98f1;
+    color: #000000;
+    font-size: 30px;
+    padding: 2px;
+    text-align: left;
+    height: 200px;
+    width: 200%;
+    align-items: flex-start;
+  } 
+
+h1, h2{
+    text-align: center;
+}
