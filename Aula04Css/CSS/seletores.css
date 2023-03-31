@@ -1,15 +1,19 @@
-*[src]{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
+/* *[src]{
+    font-size: medium;
+} */
 /*
 p.c1.c2#azul{
     color:aquamarine
 } */
-
+/*
 p.c1+p{ /* o proximo paragrafo dps do paragrafo com c1 vai ficar verde */
-    color:green; 
+   /* color:green; 
 }
 
 h1.paragrafo-principal ~ p { /*ache o h1 com tal titulo, todos os paragrafos dps disso vao ser laranja*/
-    color: orange; 
+  /*  color: orange; 
+} */
+
+li:hover{
+    color:red;
 }
