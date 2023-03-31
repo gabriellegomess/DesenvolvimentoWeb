@@ -1,0 +1,33 @@
+html{
+    font-size: 60px;
+}
+
+div{
+    font-size: 10px;
+    width: 50vw; /*50% da largura do dispositivo, se ajusta, o mesmo serve para altura (height = height: 50vh)*/
+    background-color: yellow;
+    height: 50vh;    
+    /*overflow*/
+}
+
+p{
+    /*font-size: 20px;*/
+    /*font-size: 1em; pega do "pai" */
+    font-size: 1rem; /*equivale ao que tem no html*/
+    width: 50vw; /*50% da largura do dispositivo, se ajusta, o mesmo serve para altura (height = height: 50vh)*/
+    
+}
+
+#pai{
+    background-color: yellow;
+    width: 80vw;
+    height: 80vh;
+}
+
+#filho{
+    background-color: blue;
+   /* width: 30vw;
+    height: 30vh;*/
+    width: 50%;
+    height: 50%;
+}
