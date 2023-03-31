@@ -276,7 +276,7 @@ ESTILO INTERNO - facil de adicionar mas para site com varias paginas não é efi
 
 <style> </style> (antes do titulo da pagina)
 
-ESTILO EXTERNO - arquivo css só tem os estilos
+ESTILO EXTERNO - arquivo css só tem os estilos, o arquivo css fica isolado das outras
 <link rel="stylesheet" href="style.css">
 
 ESTILO INLINE
@@ -284,7 +284,20 @@ ESTILO INLINE
 
 alteração pontual, coisas especificas, precisa mudar manualmente
 
-SELETORES: tag(h1, p, ul), class(varios elementos), id(unico elemento tem isso)
+SELETORES: tag(h1, p, ul) -> padroniza a pagina, padroniza os paragrafos e coisas que querem ser iguais
+
+class(varios elementos) -> mesmo tendo duas classes no mesmo elememto, a ultimo tag aplicada é a usada ex:
+
+.veio-antes{
+    color: red;
+}
+.veio-depos{
+    color: blue;
+}
+
+id(unico elemento tem isso) -> #nome{
+
+                                }
 
 
 
@@ -303,9 +316,46 @@ auto renemae tag
 crtl shift p - wrap 
 
 algum tag*2 (nome da tag e quantas vezes vc quer que ela abra)
-ex: <li>*3
+ex: li*3
         vai abrir   <li></li>
                     <li></li>
                     <li></li>
+OUU
+
+li {Texto aqui} *3
+                    <li>Texto aqui</li>
+                    <li>Texto aqui</li>
+                    <li>Texto aqui</li>
+
+
+
+background-color = Define a cor do fundo de um elemento.
+color = Define a cor do texto dentro de um elemento.
+
+opacity = Define a transparência de um elemento.
+
+box-shadow = Define uma sombra para um elemento.
+font-family = define a fonte do texto.
+
+font-size = Define o tamanho da fonte de um texto.
+
+font-weight = define a espessura da fonte (negrito ou normal).
+
+line-height = define a altura da linha do texto.
+
+text-align = Define o alinhamento horizontal do texto dentro de um elemento. !!
+
+text-decoration = adiciona uma decoração de texto, como sublinhado.
+text-transform = altera o estilo do texto, como maiúsculas ou minúsculas.
+text-indent = altera a identação (espaço antes da primeira palavra do parágrafo).
+letter-spacing = define o espaçamento entre as letras do texto.
+word-spacing = define o espaçamento entre as palavras do texto.
+width = define a largura de um elemento
+height = define a altura de um elemento
+
 
  -->
+
+
+
+ 

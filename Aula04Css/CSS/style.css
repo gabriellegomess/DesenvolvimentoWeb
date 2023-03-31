@@ -1,0 +1,79 @@
+  /* h1, h2, h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: r gb(0, 47, 255); /* visivel mais facil, porem lento 
+}
+
+p {
+    color:  r gba(15, 241, 166, 0.3); /* rgba - transparencia  /*rgb cor normal 
+}
+
+li {
+    color:# ee0686; /* mais rapido porem dificil de entender 
+}  */
+/*
+
+li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: green;
+} */
+
+body{
+    opacity: 80%;
+}
+
+
+
+#h-azul{
+    color:blue;
+    opacity: 50%;
+}
+
+#li-1{
+    color:greenyellow;
+}
+
+#p-roxo{
+    color:purple;
+}
+
+.primeiro-paragrafo{
+    color:aquamarine;
+}
+
+.h1-vermelho{
+    color: red;
+}
+
+.p-azul{
+    color:blue;
+    font-size: 12;
+}
+
+.h2-azul{
+    color:blue;
+    font-size: 14;
+}
+
+.p-laranja{
+    color:orangered;
+}
+
+.h3-verde{
+    color:green;
+}
+
+#h1-3{
+    font-family: monospace;
+    font-weight: 500;
+    line-height: 100px;
+    text-align: center;
+    text-transform: capitalize; /* deixa as primeiras letras maiuscula */
+    letter-spacing: 20px;
+    word-spacing: 15px;
+}
+
+div {
+    background-color: gold;
+    height: 100%;
+    width: 100%;
+}
