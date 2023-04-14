@@ -1,0 +1,91 @@
+.imagem{
+    border-width: 2px;
+    border-color: blue;
+    border-style: solid; 
+    padding-left: 50px; 
+    padding-right: 50px;
+}
+/*
+.linha{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    width: fit-content; 
+    height: fit-content;
+}*/
+
+li{
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    width: fit-content; 
+    height: fit-content;
+    margin-top: 16px;
+} 
+
+.limao{
+    border-width: 1px;
+    border-color: rgb(0, 0, 0);
+    background-color: greenyellow;
+    border-style: solid;
+    padding: 30px;
+    width: max-content;
+    float: center;
+    text-align: center;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.lorem{
+    border: 1px black solid;
+    height: 90px;
+    width: 99px;
+    overflow: hidden;
+    display: block;
+}
+
+.centralizar{
+    border: 1px black solid;
+    height: 90px;
+    width: 99px;
+    border-style: solid;
+    padding: 30px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.center{
+    background-color: aqua;
+}
+
+.div1{
+    border: 1px black solid;
+    height: 100px;
+    width: 70px;
+    padding: 60px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.div2{
+    border: 1px aquamarine solid;
+    height: 90px;
+    width: 90px;
+    background-color: aquamarine;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
