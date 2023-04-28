@@ -17,26 +17,61 @@ div{
 	background-color: rgb(254, 177, 192);
 }
 
-@media screen and (max-width: 1200px) {
+/* ou 
+
+@media (min-width: 901px){
     div{
-        background-color: orange;
+        background-color: rgb(255, 255, 255);
+        width: 30vw;
+        height: 30vh;
+        border-color: green;
+        border-width: 5px;
+        border-style: solid;
+    }
+}
+
+@media (min-width: 1201px){
+    div{
+        background-color: rgb(255, 255, 255);
         width: 50vw;
         height: 50vh;
+        border-color: orange;
+        border-width: 5px;
+        border-style: solid;
+    }
+}
+
+*/
+
+@media screen and (max-width: 1200px) {
+    div{
+        background-color: rgb(255, 255, 255);
+        width: 50vw;
+        height: 50vh;
+        border-color: orange;
+        border-width: 5px;
+        border-style: solid;
     }
 }
 
 @media screen and (max-width: 900px) {
     div{
-        background-color: green;
+        background-color: rgb(255, 255, 255);
         width: 30vw;
         height: 30vh;
+        border-color: green;
+        border-width: 5px;
+        border-style: solid;
     }
 }
 
 @media screen and (max-width: 300px) {
     div{
-        background-color: purple;
+        background-color: rgb(252, 249, 252);
         width: 30vw;
         height: 60vh;
+        border-color: purple;
+        border-width: 5px;
+        border-style: solid;
     }
 }
