@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            height: 200px;
+            width:200px;
+            background-color: aqua;
+        }
+        div.centralizada {
+            margin-left:auto;
+            margin-right: auto;
+        }
+
+        div.centralizada > p {
+            position:relative;
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Alinhamento</h1>
+    <hr>
+    <h2>Centralizando texto</h2>
+    <p>Podemos utilizar a propriedade text-align para alinhar um texto dentro de um elemento.</p>
+    <p style="text-align: center;">Texto no centro</p>
+    <p style="text-align: left;">Texto à esquerda</p>
+    <p style="text-align: right;">Texto à direita</p>
+    <hr>
+    <h2>Centralizando elemento</h2>
+    <p>Para alinhar um elemento em relação à página, podemos utilizar margens como auto:</p>
+    <div class="centralizada">
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+/*CSS que sempre vai ser aplicado! 
+O CSS sempre pega a ultima regra
+Colocar sempre ou ORDEM CRESCENTE ou ORDEM DECRESCEENTE (nao pode por intercalado)
+Regras para mobile (min-widht: 800px) (min-width: 1200px) vem antes das regras para desktop caso queira que o site seja focado para celular
+Regras para desktop (max-width: 800px) (max-width: 400px) vem antes das mobile caso o site seja focado para desktop
+
+<link rel="stylesheet" href="CSS/mediaQuery.css">
+
+*/
+
+div{
+    width: 80vw;
+	height: 80vh;
+	position: absolute;
+	top: 10vh;
+	left: 10vw;
+	background-color: rgb(254, 177, 192);
+}
+
+@media screen and (max-width: 1200px) {
+    div{
+        background-color: orange;
+        width: 50vw;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    div{
+        background-color: green;
+        width: 30vw;
+        height: 30vh;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    div{
+        background-color: purple;
+        width: 30vw;
+        height: 60vh;
+    }
+}
