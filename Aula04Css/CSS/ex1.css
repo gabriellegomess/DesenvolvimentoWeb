@@ -1,0 +1,34 @@
+div{
+    width: 200px;
+    height: 200px;
+}
+
+.class_1{
+    background-color: red;
+   /* position: fixed;
+    top: 5px;
+    left: 30px;
+    width: 99vw;
+    height: 20px;.*/
+}
+
+.class_2{
+    background-color: green;
+    bottom: 100px;
+    left: 100px;
+    position: relative;
+}
+
+.class_3{
+    background-color: blue;
+    position: relative;
+    z-index: 1; /*para definir o qnto pra frente ou pra tras(-n) ele vai estar*/ /* apenas entre "irmaos" */
+}
+
+.class_4{
+    background-color: purple;
+    bottom: 100px;
+    left: 100px;
+    position: relative;
+}
+
