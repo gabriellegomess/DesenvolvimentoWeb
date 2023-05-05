@@ -12,7 +12,6 @@
     /* eixo principal */
     justify-content: space-around; /* center todos os elementos vao ficar no meio // flex-start todos os elementos vao ficar no cmç //
     space deixa todos espaçados (around entre eles e pouco na borda // between espaço entre os elementos e n na borda */
-
     /* eixo transversal */
 
    /* justify-content: flex-start; no transversal da pra usar align ontent q diz como o conteudo se comporta na vertical*/
