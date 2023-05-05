@@ -1,0 +1,77 @@
+.code {
+    border-color: black;
+    border-style:solid;
+    border-width: 0.5px;
+    display: inline-block;
+}
+
+.conteudo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: relative;
+}
+
+.azul {
+    background-color: rgb(167, 167, 238);
+    
+}
+
+.vermelho {
+    background-color: rgb(240, 108, 108);
+}
+
+.verde {
+    background-color:rgb(118, 243, 118);
+}
+
+div p {
+    /* Center */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Bold */
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+/* Conteiners para o flexbox */
+.container.displayflex.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container.displayflex.row.justify_start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.container.displayflex.row.justify_end {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.container.displayflex.row.justify_center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.container.displayflex.row.justify_space_between {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container.displayflex.row.justify_space_around {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}

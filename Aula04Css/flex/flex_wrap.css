@@ -1,0 +1,27 @@
+.padrao {
+    display:flex;
+    flex-direction: row;
+    
+}
+
+.padrao > div {
+    background-color: aqua;
+    margin: 10px;
+    flex-grow: 1;
+    min-height: 200px;
+    min-width: 300px;
+}
+
+.flex-wrap {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-wrap > div {
+    background-color: aqua;
+    margin: 10px;
+    flex-grow: 1;
+    min-height: 200px;
+    min-width: 300px;
+}

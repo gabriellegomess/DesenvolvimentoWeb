@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex_grow.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Organização com o FlexBox (flex-grow)</h1>
+    <p>Podemos separar o espaço de maneira desigual para cada um de nossos elementos</p>
+    <h2>Comportamento padrão</h2>
+    <p>Por padrão, todos os elementos de um conteiner recebem o mesmo espaço</p>
+    <!-- Conteiner flexbox padrão -->
+    <section class="container displayflex row">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+<hr>
+<h2>Aumentando o peso de 1</h2>
+<p>Podemos aumentar o espaço ocupado pelo primeiro elemento</p>
+<p>Nesse caso, 1 recebeu <strong>flex-grow: 1</strong></p>
+<!-- Conteiner alinhado à esquerda -->
+    <section class="container displayflex row">
+        <div class="conteudo azul grow_1"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+    <!-- Código -->
+<div class="code">
+    
+<code>
+<pre>
+.grow_1 {
+    flex-grow: 1;
+}
+</pre>
+</code>
+    
+</div>
+<hr>
+<h2>Aumentando ainda mais o espaço</h2>
+<p>Podemos aumentar ainda mais o espaço ocupado por um elemento (se fizer sentido/nesse caso não faz...).</p>
+<p>Nesse caso, 1 recebeu <strong>flex-grow: 2</strong></p>
+<!-- Conteiner alinhado à esquerda -->
+    <section class="container displayflex row">
+        <div class="conteudo azul grow_2"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+    <!-- Código -->
+<div class="code">
+    
+<code>
+<pre>
+.grow_2 {
+    flex-grow: 2;
+}
+</pre>
+</code>
+    
+</div>
+<hr>
+<h2>Aumentar o peso de dois</h2>
+<p>Podemos ainda aumentar o espaço de vários elementos.</p>
+<p>Nesse caso, o 1 e o 3 apresentam <strong>flex-grow: 1</strong></p>
+    <!-- Conteiner alinhado à direita -->
+    <section class="container displayflex row">
+        <div class="conteudo azul grow_1"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde grow_1"><p>3</p></div>
+    </section>
+        <!-- Código -->
+<div class="code">
+
+<code>
+<pre>
+.grow_1 {
+    flex-grow: 1;
+}
+</pre>
+</code>
+    
+</div>
+<hr>
+<h2>Pesos diferentes</h2>
+<p>Podemos ainda colocar espaços diferentes em cada elemento</p>
+<p>Nesse caso, o 1 apresenta <strong>flex-grow: 1</strong> e o 3 apresentam <strong>flex-grow: 3</strong> </p>
+<!-- Conteiner centralizado -->
+    <section class="container displayflex row justify_center">
+        <div class="conteudo azul grow_1"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde grow_3"><p>3</p></div>
+    </section>
+
+    <!-- Código -->
+<div class="code">
+    
+<code>
+<pre>
+.grow_1 {
+    flex-grow: 1;
+}
+</pre>
+</code>
+</div>
+</body>
+</html>

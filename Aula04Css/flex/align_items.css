@@ -1,0 +1,36 @@
+.horizontal {
+    display:flex;
+    flex-direction:row;
+
+}
+
+.inicio {
+    align-items: flex-start;
+}
+
+.centro {
+    align-items: center;
+}
+
+.fim {
+    align-items: flex-end;
+}
+
+.vertical {
+    display:flex;
+    flex-direction:column;
+
+}
+
+body > div {
+    background-color: rgb(249, 220, 176);
+    min-width: 300px;
+    min-height: 300px;
+}
+
+div > div{
+    width:200px;
+    height:200px;
+    background-color: #f00;
+    margin: 5px;
+}

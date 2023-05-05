@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flexbox.css">
+    <script src="flexbox.js"></script>
+    <title>Exemplos das propriedades do flexbox</title>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <p>O modelo de layout flexbox permite que oganizemos elementos (denominados <em>Flex-items</em>) dentro de um <em>container</em> (<em>Flex-container</em>).</p>
+    <p>Esta página permite observar o funcionamento de algumas propriedades do flexbox.</p>
+
+    <h2>Flex-direction</h2>
+    <p>A propriedade <strong>flex-direction</strong> permite definir a direção em que os elementos serão posicionados dentro do elemento pai.</p>
+
+    <div class="flex-container">
+        <div class="flex-item">
+            <p><strong>Item 1</strong>: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quidem dolor? Corrupti consequuntur accusantium sint sunt atque quaerat magnam dignissimos aliquam, temporibus soluta omnis quisquam animi deleniti cumque maiores eaque. </p>
+        </div>
+        <div class="flex-item">
+            <p><strong>Item 2</strong>: Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        </div>
+        <div class="flex-item">
+            <p><strong>Item 3</strong>: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quidem dolor? Corrupti consequuntur accusantium sint. </p>
+        </div>
+    </div>
+
+    <div class="selector">
+        <p>flex-direction: 
+          <select id="f-direction" name="f-direction" onchange="f_direction(this)">
+            <option value="row">row</option>
+            <option value="column">column</option>
+            <option value="row-reverse">row-reverse</option>
+            <option value="column-reverse">column-reverse</option>
+          </select></p>
+    </div>
+
+    <h2>Posicionamentos</h2>
+    <p>Existem 3 propriedades importantes para o posicionamento dos <em>flex-items</em> dentro de um <em>flex-container</em>. Para que essas propriedades façam diferença, o pai (container) precisa ser maior que o tamanho necessário para os elementos filhos.</p>
+    
+    <ul>
+        <li><strong>justify-content</strong> permite alinhar nossos elementos horizontalmente.</li>
+        <li><strong>align-content</strong> permite alinhar nossos elementos verticalmente, necessita da propriedade <strong>flex-wrap: wrap;</strong>.</li>
+        <li><strong>align-items</strong> permite alinhar nossos elementos em relação ao bloco de outros, por exemplo, deixar todos alinhados em baixo, ou em cima.</li>
+    </ul>
+
+    <div class="flex-container posicionamentos monoline">
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 1</strong>: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quidem dolor? Corrupti consequuntur accusantium sint sunt atque quaerat magnam dignissimos aliquam, temporibus soluta omnis quisquam animi deleniti cumque maiores eaque. </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 2</strong>: Lorem ipsum dolor, sit amet consectetur adipisicing elit.  </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 3</strong>: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, quidem dolor? Corrupti consequuntur accusantium sint. </p>
+        </div>
+    </div>
+
+    <div class="selector-flex">
+        <div class="selector">
+            <p>justify-content: 
+              <select id="justify_content" name="justify_content" onchange="posicionamentos()">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+              </select></p>
+        </div>
+        <div class="selector">
+            <p>align-content: 
+              <select id="align_content" name="align_content" onchange="posicionamentos()">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="stretch">stretch</option>
+              </select></p>
+        </div>
+        <div class="selector">
+            <p>align-items: 
+              <select id="align_items" name="align_items" onchange="posicionamentos()">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="stretch">stretch</option>
+                <option value="baseline">baseline</option>
+              </select></p>
+        </div>
+    </div>
+
+    <h3>Multilinha</h3>
+    <p>Como você deve ter percebido, a  propriedade <strong>align-content</strong> precisa que o <strong>flex-wrap: wrap;</strong> esteja ativo para funcionar. Isso porque essa propriedade é planejada para conteúdos com várias linhas. (Observe que <strong>align-content: stretch</strong> não fazia nada)</p>
+    
+    <ul>
+        <li><strong>justify-content</strong> permite alinhar nossos elementos horizontalmente.</li>
+        <li><strong>align-content</strong> permite alinhar nossos elementos verticalmente, necessita da propriedade <strong>flex-wrap: wrap;</strong>.</li>
+        <li><strong>align-items</strong> permite alinhar nossos elementos em relação ao bloco de outros, por exemplo, deixar todos alinhados em baixo, ou em cima.</li>
+    </ul>
+
+    <div class="flex-container posicionamentos multiline">
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 1:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo similique esse sapiente asperiores ipsa repellendus error molestiae libero quisquam fugiat mollitia corrupti, pariatur magnam sed maxime voluptate consectetur ullam! Enim! </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 2:</strong> Lorem ipsum dolor sit amet Enim! </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 3:</strong> Lorem ipsum dolor  molestiae libero quisquam fugiat mollitia corrupti, pariatur magnam sed maxime voluptate consectetur ullam! Enim! </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 4:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo similique esse sapiente asperiores ipsa repellendus error molestiae libero quisquam fugiat mollitia corrupti, pariatur magnam sed maxime voluptate consectetur ullam! Enim! </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 5:</strong> Lorem  repellendus ullam! Enim! </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 6:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo similique esse sapiente asperiores ipsa repellendus error molestiae Enim! </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 7:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo similique esse sapiente asperiores ipsa repellendus error molestiae libero quisquam fugiat mollitia corrupti, pariatur magnam sed maxime voluptate consectetur ullam! Enim! </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 8:</strong> Lorem ipsum dolor sit amet consectetur. </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 9:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo similique esse sapiente asperiores ipsa repellendus error molestiae libero quisquam fugiat mollitia corrupti, pariatur magnam sed maxime voluptate consectetur ullam! Enim! </p>
+        </div>
+        <div class="flex-item posicionamentos">
+            <p><strong>Item 10:</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo similique esse sapiente asperiores ipsa. </p>
+        </div>
+
+    </div>
+
+    <div class="selector-flex">
+        <div class="selector">
+            <p>justify-content: 
+              <select id="justify_content_m" name="justify_content_m" onchange="posicionamentos_multiline()">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+              </select></p>
+        </div>
+        <div class="selector">
+            <p>align-content: 
+              <select id="align_content_m" name="align_content_m" onchange="posicionamentos_multiline()">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="stretch">stretch</option>
+              </select></p>
+        </div>
+        <div class="selector">
+            <p>align-items: 
+              <select id="align_items_m" name="align_items_m" onchange="posicionamentos_multiline()">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="stretch">stretch</option>
+                <option value="baseline">baseline</option>
+              </select></p>
+        </div>
+    </div>
+
+</body>
+</html>

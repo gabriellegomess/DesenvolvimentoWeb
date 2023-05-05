@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="justify_content.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Organização com o FlexBox (justify-content)</h1>
+    <p>Podemos posicionar os itens organizados pelo flexbox em diversos locais:</p>
+    <h2>Comportamento padrão</h2>
+    <p>Por padrão, um display flex em linha inicia à esquerda</p>
+    <!-- Conteiner flexbox padrão -->
+    <section class="container displayflex row">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+<hr>
+
+<h2>Alinhando no lado padrão</h2>
+<p>Podemos alinhar os elementos na sua direção usual (nesse caso da esquerda para a direita)</p>
+    <!-- Conteiner alinhado à esquerda -->
+    <section class="container displayflex row justify_start">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+    <!-- Código -->
+<div class="code">
+    
+<code>
+<pre>
+display: flex;
+flex-direction: row;
+justify-content: flex-start;
+</pre>
+</code>
+    
+</div>
+<hr>
+<h2>Alinhando no lado contrário</h2>
+<p>Podemos alinhar os elementos no lado inverso ao qual usualmente estão (nesse caso, à direita)</p>
+    <!-- Conteiner alinhado à direita -->
+    <section class="container displayflex row justify_end">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+        <!-- Código -->
+<div class="code">
+
+<code>
+<pre>
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+</pre>
+</code>
+    
+</div>
+<hr>
+<h2>Centralizando</h2>
+<p>Podemos centralizar com relação ao conteiner</p>
+    <!-- Conteiner centralizado -->
+    <section class="container displayflex row justify_center">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+
+    <!-- Código -->
+<div class="code">
+    
+<code>
+<pre>
+display: flex;
+flex-direction: row;
+justify-content: center;
+</pre>
+</code>
+    
+</div>
+<hr>
+<h2>Espaçando igualmente</h2>
+<p>Também podemos espalhar nossos elementos para que ocupem todo o espaço da linha/coluna, deixando um espaço entre eles</p>
+    <!-- Conteiner com display flex em coluna reversa -->
+    <section class="container displayflex row justify_space_between">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+
+    <!-- Código -->
+<div class="code">
+    
+<code>
+<pre>
+display: flex;
+flex-direction: column-reverse;
+justify-content: space-between;
+</pre>
+</code>
+</div>
+<hr>
+<h2>Deixando espaços ao redor</h2>
+<p>De maneira similar ao anterior, podemos espalhar nossos elementos por uma linha/coluna. Porém agora também deixando espaço ao redor deles.</p>
+    <!-- Conteiner com display flex em coluna reversa -->
+    <section class="container displayflex row justify_space_around">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+
+    <!-- Código -->
+<div class="code">
+    
+<code>
+<pre>
+display: flex;
+flex-direction: column-reverse;
+justify-content: space-around;
+</pre>
+</code>
+</div>
+</body>
+</html>

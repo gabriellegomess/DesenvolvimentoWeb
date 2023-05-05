@@ -1,0 +1,44 @@
+.flex-container {
+    display: flex;
+    background-color: cadetblue;
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid rgb(12, 82, 85);
+    flex-direction: row;
+}
+
+.flex-item {
+    background-color: rgb(250, 230, 186);
+    border-radius: 15px;
+    padding: 5px;
+    border: 2px solid rgb(255, 136, 0);
+}
+
+.flex-container.posicionamentos {
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 500px;
+    justify-content: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+.flex-container.posicionamentos.multiline {
+    height: 800px;
+}
+
+.flex-item.posicionamentos {
+    width: 200px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.selector-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}

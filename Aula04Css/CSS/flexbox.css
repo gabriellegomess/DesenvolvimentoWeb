@@ -1,0 +1,37 @@
+.container{
+    background-color: pink;
+    width: 100vw;
+    height: 50vh;
+    border: 5px solid palevioletred; 
+    box-sizing: border-box;
+    border-radius: 15px;
+ 
+    display: flex; 
+    flex-direction: row;  /* column vai dxa tds os elementos em colunas // row reverse vai inverter as ordens dos elementos */ 
+
+    /* eixo principal */
+    justify-content: space-around; /* center todos os elementos vao ficar no meio // flex-start todos os elementos vao ficar no cmç //
+    space deixa todos espaçados (around entre eles e pouco na borda // between espaço entre os elementos e n na borda */
+
+    /* eixo transversal */
+
+   /* justify-content: flex-start; no transversal da pra usar align ontent q diz como o conteudo se comporta na vertical*/
+
+    align-items: space-between; /* flex-end fica posicionado os itens no final // flex start fica posicionado no inicio*/ 
+    align-content: center; /* posiciona o conteudo */
+    flex-wrap: wrap; /* define oq acontece com os elementos q ultrapassam as coisa // */
+    overflow: auto;
+}
+
+.itens{
+    background-color: rgb(164, 164, 245);
+    border: 3px solid rgb(131, 131, 247);
+    width: 100px;
+    height: 50px;
+    font-size: 2em;
+    text-align: center;
+}
+
+body {
+    margin: 0px;
+}

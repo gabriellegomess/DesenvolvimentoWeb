@@ -1,0 +1,62 @@
+.code {
+    border-color: black;
+    border-style:solid;
+    border-width: 0.5px;
+    display: inline-block;
+}
+
+.conteudo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: relative;
+}
+
+.azul {
+    background-color: rgb(167, 167, 238);
+    
+}
+
+.vermelho {
+    background-color: rgb(240, 108, 108);
+}
+
+.verde {
+    background-color:rgb(118, 243, 118);
+}
+
+div p {
+    /* Center */
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Bold */
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+/* Conteiners para o flexbox */
+.container.displayflex.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.container.displayflex.reverse_row {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container.displayflex.column {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container.displayflex.reverse_column {
+    display: flex;
+    flex-direction: column-reverse;
+}

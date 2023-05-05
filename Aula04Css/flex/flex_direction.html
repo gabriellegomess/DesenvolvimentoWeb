@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex_direction.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Organização com o FlexBox</h1>
+    <p>O FlexBox pode organizar nosso layout em linhas e colunas</p>
+    <h2>Comportamento padrão</h2>
+    <p>Sem o FlexBox, cada elemento está posicionado de acordo com as regras do HTML</p>
+    <!-- Conteiner -->
+    <section class="container padrao">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+<hr>
+
+<h2>Comportamento com o Flexbox organizado em linha</h2>
+<p>Com a organização em linha do FlexBox, os elementos são apresentados lado a lado, da <strong>esquerda</strong> para a <strong>direita</strong></p>
+    <!-- Conteiner com display flex em linha -->
+    <section class="container displayflex row">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+    <!-- Código -->
+<div class="code">
+
+<code>
+<pre>
+display: flex;
+flex-direction: row;
+</pre>
+</code>
+
+</div>
+<hr>
+<h2>Comportamento com o Flexbox organizado em linha ao contrário</h2>
+<p>Com a organização em linha reversa do FlexBox, os elementos são apresentados lado a lado, da <strong>direita</strong> para a <strong>esquerda</strong></p>
+    <!-- Conteiner com display flex em linha reversa -->
+    <section class="container displayflex reverse_row">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+        <!-- Código -->
+<div class="code">
+    
+<code>
+<pre>
+display: flex;
+flex-direction: row-reverse;
+</pre>
+</code>
+    
+</div>
+<hr>
+<h2>Comportamento com o Flexbox organizado em coluna</h2>
+<p>Com a organização em coluna do FlexBox, os elementos são apresentados um abaixo do outro, de <strong>cima</strong> para <strong>baixo</strong></p>
+    <!-- Conteiner com display flex em coluna -->
+    <section class="container displayflex column">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+
+    <!-- Código -->
+<div class="code">
+    
+<code>
+<pre>
+display: flex;
+flex-direction: column;
+</pre>
+</code>
+    
+</div>
+<hr>
+<h2>Comportamento com o Flexbox organizado em coluna ao contrário</h2>
+<p>Com a organização em coluna reversa do FlexBox, os elementos são apresentados um abaixo do outro, de <strong>baixo</strong> para <strong>cima</strong></p>
+    <!-- Conteiner com display flex em coluna reversa -->
+    <section class="container displayflex reverse_column">
+        <div class="conteudo azul"><p>1</p></div>
+        <div class="conteudo vermelho"><p>2</p></div>
+        <div class="conteudo verde"><p>3</p></div>
+    </section>
+
+    <!-- Código -->
+<div class="code">
+    
+<code>
+<pre>
+display: flex;
+flex-direction: column-reverse;
+</pre>
+</code>
+    
+</div>
+</body>
+</html>
