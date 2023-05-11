@@ -1,0 +1,16 @@
+
+.par{
+    color: blue;
+    font-size: 15px;
+    margin-bottom: 5px; /* Distância de 5px entre os elementos */
+}
+
+.impar{
+    background-color: green;
+    font-size: 18px;
+    margin-bottom: 5px; /* Distância de 5px entre os elementos */
+}
+
+.display{
+    display: inline-block;
+}
