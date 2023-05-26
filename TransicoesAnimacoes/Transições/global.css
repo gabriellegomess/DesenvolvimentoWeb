@@ -1,0 +1,46 @@
+div {
+    width: 200px;
+    height: 100px;
+    border-width: 2px;
+    border-color: blue;
+    border-style: solid;
+    background-color: aqua;
+    border-radius: 10px;
+
+
+}
+
+div:hover {
+
+    border-width: 2px;
+    border-color: green;
+    border-style: solid;
+    border-radius: 10px;
+
+}
+
+
+#botao:hover {
+    background-color: brown;
+}
+
+#menu {
+    visibility:hidden;
+}
+
+#botao:hover+#menu {
+    width: 400px;
+    height: 400px;
+    visibility: visible;
+    transition-property: width, height;
+    transition-duration: 1.5s, 1.5s;
+    transition-delay: 0.5s, 0.5s;
+    transition-timing-function: linear, linear;
+}
+
+#menu:hover {
+    width: 400px;
+    height: 400px;
+    visibility: visible;
+}
+
