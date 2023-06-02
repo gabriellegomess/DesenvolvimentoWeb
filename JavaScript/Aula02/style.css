@@ -1,0 +1,12 @@
+.ganso{
+    display: none;
+    /*visibility: hidden; */
+}
+
+.visivel{
+    display: inline-block;
+}
+
+.invisivel{
+
+}
