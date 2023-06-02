@@ -13,3 +13,9 @@ let minha_div = document.querySelector(".container"); //pegando a div com a clas
 minha_div.innerHTML = "<p> Dentro da div </p>";
 minha_div.innerHTML = "<img src=\"download.jpg\" width\'50px\' height=\'50px\'>";
 
+
+//prompt
+
+//write
+
+//alert
