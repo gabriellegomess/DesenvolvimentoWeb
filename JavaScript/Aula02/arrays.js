@@ -4,6 +4,9 @@ minha_var.push("Olá");
 minha_var.push(42);
 minha_var.push(70);
 
+minha_var[3] = true;
+
+
 for(let i = 0; i < minha_var.length; i++){
 
     console.log(minha_var[i]);

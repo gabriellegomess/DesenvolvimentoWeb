@@ -1,0 +1,10 @@
+button{
+    background-color: red;
+
+}
+
+button:hover{
+    transition-property: background-color;
+    transition-duration: 2s;
+    background-color: aqua;
+}
