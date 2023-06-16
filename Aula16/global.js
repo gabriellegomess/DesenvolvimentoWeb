@@ -17,9 +17,9 @@ function colocar_texto() {
 function limpar(){
     let lista_paragrafos = document.querySelectorAll("body>div:nth-child(1)>p")
 
-    for(let i = 0; i < lista_paragrafos.length; i++, console.log("Fim do for")){
+    for(let i = 0; i < lista_paragrafos.length;i++){
 
-        
+        lista_paragrafos[i].remove();
         
     }
 
