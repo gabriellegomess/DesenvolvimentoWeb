@@ -1,0 +1,27 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+}
+
+body>div:nth-child(1) {
+    width: 200px;
+    height: 200px;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+
+    margin-bottom: 10px;
+
+    overflow: auto;
+}
+
+#texto_botao {
+    display: flex;
+    flex-direction: row;
+}

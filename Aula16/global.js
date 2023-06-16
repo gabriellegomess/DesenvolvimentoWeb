@@ -11,17 +11,18 @@ function colocar_texto() {
     novo_paragrafo.style.color="green";
     novo_paragrafo.innerHTML = input_origem.value;
 
-   // div_destino.innerHTML = input_origem.value; 
 }
 
-function limpar(){
-    let lista_paragrafos = document.querySelectorAll("body>div:nth-child(1)>p")
 
-    for(let i = 0; i < lista_paragrafos.length;i++){
+function limpar_textos() {
+    let lista_de_paragrafos = document.querySelectorAll("body>div:nth-child(1)>p");
 
-        lista_paragrafos[i].remove();
-        
+
+    for(let i=0; i < lista_de_paragrafos.length; ++i) {
+        //lista_de_paragrafos[i].remove();
+
+        //div_destino.removeChild(lista_de_paragrafos[i]);
+
+        lista_de_paragrafos[i].parentNode.removeChild(lista_de_paragrafos[i])
     }
-
 }
-

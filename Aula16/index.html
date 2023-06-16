@@ -4,29 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="index.css">
-
+    <link rel="stylesheet" href="global.css">
+    <script src="global.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-
-    <script src="global.js"></script>
-    <script src="index.js"></script>
-
     <div></div>
 
-<div id="texto_botao">
-    <div></div>
-    <input type="text">
-    <button onclick="colocar_texto(); console.log('Texto colocado')"> Enviar </button>
-</div>
 
-    <p> PREVIEW </p>
+    <div id="texto_botao">
+        <div></div>
+        <input type="text">
+        <button onclick="colocar_texto(); console.log('Texto colocado');" >Enviar</button>
+    </div>
 
-    <button onclick="limpar(); console.log('Texto limpo')"> Limpar</button>
-    
-    <button onclick="salvar"> Salvar </button>
-    
+    <p>PREVIEW</p>
+
+    <button onclick="limpar_textos(); console.log('Texto limpo');">Limpar</button>
 </body>
 </html>
